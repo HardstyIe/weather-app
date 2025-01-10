@@ -5,14 +5,68 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="src/index.css">
+  <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
   <title>Weather App</title>
 </head>
 
 <body>
+  <main>
+    <div id="weatherBox" class="weatherBox">
 
+      <section class="weatherTitle">
+        <p>Weather App CDA</p>
+      </section>
+
+      <div class="separator"></div>
+
+      <section class="weatherMainInfo">
+        <img src="" alt="Weather Icon">
+        <p class="temp"></p>
+        <p class="weatherType"></p>
+        <div class="location">
+          <i class="bx bx-map"></i>
+          <span></span>
+        </div>
+      </section>
+
+      <div class="separator"></div>
+
+      <section class="weatherOtherInfo">
+        <div class="feelTemp">
+          <div>
+            <i class="bx bxs-thermometer"></i>
+            <span></span>
+          </div>
+          <p>Température ressentie</p>
+        </div>
+        <div class="humidity">
+          <div>
+            <i class="bx bxs-droplet-half"></i>
+            <span></span>
+          </div>
+          <p>Humidité</p>
+        </div>
+
+        <div class="wind">
+          <div>
+            <i class="bx bx-wind"></i>
+            <span></span>
+          </div>
+          <p>Vitesse du vent</p>
+        </div>
+        <div class="date">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+          </svg>
+          <span></span>
+        </div>
+      </section>
+
+    </div>
+  </main>
 </body>
 
 </html>
 
-<script type="module" src="src/weather.js" defer></script>
-<script src="index.js" defer></script>
+<script type="module" src="src/meteo.js" defer></script>
