@@ -13,6 +13,9 @@
   },
   "license": "UNLICENSED",
   "description": "weather app for educational purpose",
+  "dependencies": {
+    "@vercel/edge": "^0.1.2"
+  },
   "config": {
     "commitizen": {
       "path": "cz-emoji"
