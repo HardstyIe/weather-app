@@ -1,15 +1,23 @@
-# weather-app
+# Weather App
 
 To install dependencies:
-
 ```bash
 bun install
 ```
 
-To run:
-
+To build:
 ```bash
-bun run index.js
+bun run build
 ```
 
-This project was created using `bun init` in bun v1.1.12. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+Lint/Format:
+```bash
+// lint command
+bun run lint
+
+// format command
+bun run format
+
+// format+lint command
+bun run check
+```

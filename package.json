@@ -1,11 +1,41 @@
 {
-  "name": "weather-app",
-  "module": "index.js",
-  "type": "module",
-  "devDependencies": {
-    "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
-  }
+	"name": "weather-app",
+	"version": "0.0.1",
+	"module": "index.ts",
+	"type": "module",
+	"private": false,
+	"author": {
+		"email": "hardstyle.dd@gmail.com",
+		"name": "HardstyIe"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/HardstyIe/weather-app"
+	},
+	"license": "UNLICENSED",
+	"description": "weather app for educational purpose",
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"@types/bun": "^1.1.14",
+		"esbuild": "0.24.0",
+		"ts-loader": "9.5.1"
+	},
+	"scripts": {
+		"build": "tsc",
+		"lint": "bunx @biomejs/biome lint --write .",
+		"format": "bunx @biomejs/biome format --write .",
+		"check": "bunx @biomejs/biome check --write ."
+	},
+	"peerDependencies": {
+		"typescript": "^5.7.2"
+	},
+	"config": {
+		"commitizen": {
+			"path": "cz-emoji"
+		},
+		"cz-emoji": {
+			"skipQuestions": ["scope", "body", "issues", "breaking"]
+		}
+	},
+	"trustedDependencies": ["@biomejs/biome", "esbuild"]
 }

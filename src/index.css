@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+:root {
+	--primary-color: #495af7;
+	--secondary-color: #fff;
+	--text-color: #fff;
+	--input-color: #000;
+	--light-grey: #f5f5f5;
+	--pending-color: #b7e4ec;
+	--pending-text-color: #0c6047;
+	--error-color: #ffc1c5;
+	--error-text-color: #631920;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background: var(--primary-color);
+	color: var(--text-color);
+}
+
+.separator {
+	background: white;
+	height: 0.2%;
+	width: 100%;
+}
+
+.weatherBox {
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(255, 255, 255, 0.1);
+	height: 600px;
+	width: 1000px;
+}
+
+.weatherTitle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 15%;
+}
+
+.weatherMainInfo {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 60%;
+
+	& img {
+		max-width: 125px;
+	}
+}
+
+.weatherOtherInfo {
+	display: grid;
+	justify-items: center;
+	align-content: center;
+	grid-template-columns: repeat(4, 1fr);
+	height: 25%;
+
+	& .feelTemp {
+		display: flex;
+		flex-direction: column;
+
+		& i {
+			font-size: 36px;
+		}
+
+		& span {
+			font-size: 24px;
+		}
+	}
+
+	& .humidity {
+		display: flex;
+		flex-direction: column;
+
+		& i {
+			font-size: 36px;
+		}
+
+		& span {
+			font-size: 24px;
+		}
+	}
+
+	& .wind {
+		display: flex;
+		flex-direction: column;
+
+		& i {
+			font-size: 36px;
+		}
+
+		& span {
+			font-size: 24px;
+		}
+	}
+
+	& .date {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		& svg {
+			height: 36px;
+		}
+	}
+}
